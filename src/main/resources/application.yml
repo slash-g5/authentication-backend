@@ -1,0 +1,19 @@
+spring:
+      datasource:
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: java
+        password: bringshoot
+        driver-class-name: org.postgresql.Driver
+      jpa:
+        hibernate:
+          ddl-auto: none
+        show-sql: true
+        properties:
+          hibernate:
+            format_sql: true
+        database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+authentication:
+      jwt:
+        secret-key: 743777217A25432A462D4A614E645267556B586E3272357538782F413F442847
+
